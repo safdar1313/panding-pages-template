@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+* {
+    font-family: 'mukta', 'helvetica';
+    scroll-behavior: smooth;
+}
+
+
+/* Global Font size */
+h1 {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.1em;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2em;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.3em;
+}
+
+.header {
+    box-shadow: 1px 1px 1px 1px #ebebeb;
+}
+
+.btn-1 {
+    padding: 12px 20px;
+    background-color: #f69d2f;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+
+    .cta-icon {
+        transition: 0.6s;
+    }
+
+    &:hover {
+        transition: 0.6s;
+
+        .cta-icon {
+            transform: rotate(45deg);
+            transition: 0.6s;
+        }
+    }
+}
+
+.btn-2 {
+    padding: 12px 20px;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    font-size: 16px;
+    color: #f69d2f;
+    font-weight: 500;
+
+    .cta-icon {
+        transition: 0.6s;
+    }
+
+    &:hover {
+        .cta-icon {
+            transform: rotate(45deg);
+            transition: 0.6s;
+        }
+    }
+}
+
+.banner-section {
+    background-position: center;
+    background-size: cover;
+    background-image: url(/images/banner-bg.webp);
+    .banner-content{
+        z-index: 5;
+        position: relative;
+    }
+    &::after {
+        content: '';
+        background-color: #000000;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    .banner-form {
+        background-color: #ffffff;
+
+        form {
+            label {
+                font-size: 16px;
+                text-transform: capitalize;
+                color: #000000;
+            }
+
+            input,
+            textarea {
+                border: 1px solid #b4b4b4;
+                width: 100%;
+                border-radius: 3px;
+                padding: 10px;
+                font-weight: 300;
+                outline: none;
+                color: rgb(226, 226, 226);
+            }
+
+            textarea {
+                height: 120px
+            }
+        }
+    }
+}
+
+.first-section{
+    .icon span{
+        font-size: 50px;
+    }
+}
+.third-section{
+    .icon span{
+        font-size: 45px;
+        background-color: #f69d2f;
+        padding: 12px;
+        border-radius: 50px;
+        color: #000000;
+    }
+}
+.fourth-section{
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(/images/banner-bg.webp);
+    &::after {
+        content: '';
+        background-color: #000000;
+        opacity: 0.5;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+}
+/*Reviews Section Starts Here */
+.reviews-section{
+    .hs-carousel-prev{
+        top:36%;
+        left: -20px;
+        cursor: pointer;
+        padding: 3px;
+        border-radius: 50%;
+        background-color: #4e4e4e;
+    }   color: white;
+    .hs-carousel-next{
+        top: 36%;
+        right: -20px;
+        cursor: pointer;
+        padding: 3px;
+        border-radius: 50%;
+        background-color: #4e4e4e;
+    }   color: white;
+    }
+}
+
+
+/* footer starts here */
+.footer{
+    .quick-links{
+        ul li{
+            transition: 0.6s;
+            &:hover{
+                transform: translateX(10px);
+                transition: 0.3s;
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width:1024px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .btn-1 {
+        padding: 8px 12px;
+        gap: 0;
+        font-size: 14px;
+    }
+
+    img {
+        max-height: 280px !important;
+    }
+}
